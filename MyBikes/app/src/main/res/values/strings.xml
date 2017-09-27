@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyBikes</string>
+    <string name="search_hint">구/동/로 등 입력하세요.</string>
+    <string name="edittext_search_video">구/동/로 등 입력하세요.</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_gpstab">GPSTabActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_direction_tap">DirectionTapActivity</string>
+    <string name="title_activity_payment_tap">PaymentTapActivity</string>
+    <string name="title_activity_card_tap">CardTapActivity</string>
+    <string name="title_activity_bike_rental_tap">BikeRentalTapActivity</string>
+</resources>

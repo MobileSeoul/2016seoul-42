@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="#ffffff"
+    tools:context="org.androidtown.mybikes.ClickActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/imageView2"
+                android:layout_height="200dp"
+                android:background="@drawable/detail_bike"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_material_dark" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1"
+                android:id="@+id/tableLayout">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv1"
+                        android:text="거치대수 :"
+                        android:textSize="15dp"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bike_number_tv"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="새주소 :"
+                        android:id="@+id/tv2"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/newAddress_tv"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="구주소 :"
+                        android:id="@+id/tv3"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/oldAddress_tv"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="URL :"
+                        android:id="@+id/tv4"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/URL_tv"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:autoLink="web"
+                        android:textColorLink="?attr/colorPrimaryDark" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="전화번호 :"
+                        android:id="@+id/tv5"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/Tel_tv"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:autoLink="phone"
+                        android:textColorLink="?attr/colorPrimaryDark" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="운영시간 :"
+                        android:id="@+id/tv6"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/time_tv"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+            </TableLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="[ 이용요금 ]"
+                android:id="@+id/tv8"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#560319"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/charge_tv"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/alertDialogIcon"
+                    android:layout_width="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_tv"
+                    android:layout_column="0"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/actionModePasteDrawable"
+                    android:layout_width="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/direction_tv"
+                    android:layout_column="0"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/common_action_bar_splitter"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_tv"
+                android:paddingBottom="10dip"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.androidtown.mybikes.AdditionalFeeFragment"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 이용권 구매 시 사용한 신용카드, 휴대전화가 자동으로 추가과금 결제수단으로 등록괴며, '나의 공간'의 추가과금수단 등록에서 추가과금 수단을 변경하실 수 있습니다."
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 미결제된 추가과금 내역이 있는 경우 자전거 대여가 제한됩니다."
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView5"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/select"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Step 01. 추가과금 수단 등록"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView2"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView4" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView6"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/payment"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 02. 추가과금 발생"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView5"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="지연 반납 등으로 추가과금이 발생합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView6" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView7"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/finish"
+                            android:layout_marginRight="10dp"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 03. 자동결제 및 결제완료"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView7"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="등록하신 추가과금수단으로 자동으로 결제가 진행됩니다.\n추가과금이 결제 완료됩니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView8" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/common_action_bar_splitter" />
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

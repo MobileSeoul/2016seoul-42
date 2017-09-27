@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.mybikes.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/imageView"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:background="@drawable/safety_rules" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:text="대여소 검색"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/round"
+                    android:paddingLeft="15dip"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:drawablePadding="90dip"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp" />
+
+                <Button
+                    android:text="GPS를 이용한 대여소 검색"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gps"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+                    android:paddingLeft="15dip"
+                    android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                    android:drawablePadding="25dip"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:text="운영시간 및 이용요금"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/charge"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+                    android:paddingLeft="15dip"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="50dip"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+                <Button
+                    android:text="이용방법"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/direction"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round"
+                    android:paddingLeft="15dip"
+                    android:drawableLeft="@android:drawable/ic_menu_help"
+                    android:drawablePadding="100dip"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:background="@drawable/drawer_bike"
+                android:layout_weight="0.6" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:id="@+id/listView" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

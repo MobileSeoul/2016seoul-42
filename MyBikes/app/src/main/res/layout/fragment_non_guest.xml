@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.mybikes.NonGuestFragment"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 서울자전거 '따릉이' ]"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#560319"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView5"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/payment"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Step 01. 일일권 구매"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView2"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="비회원 일일권을 구매합니다.\n일일권 구매는 홈페이지와 앱에서 모두 가능합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView4" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView6"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/android_phone"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 02. 앱 로그인"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView5"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="'따릉이' 앱을 실행하여 로그인합니다.\n로그인 ID는 인증한 휴대전화번호이고, 암호는 SMS로 전송됩니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView6" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView7"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/rental"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 03. 자전거 대여"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView7"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="스마트 폰앱을 이용하여 자전거 대여가 가능합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView8" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/bikerental_tv"
+                                android:textColor="@color/colorPrimary"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView8"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/parking"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 04. 자전거 반납"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView13"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+                            <TextView
+                                android:text="자전거를 이용하신 후 가까운 대여소에 반납하시면 됩니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView14" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/return_tv"
+                                android:textColor="@color/colorPrimary"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/common_action_bar_splitter" />
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

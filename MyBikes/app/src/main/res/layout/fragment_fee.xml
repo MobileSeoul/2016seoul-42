@@ -1,0 +1,335 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.androidtown.mybikes.FeeFragment"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[ 회원결제 ]"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="#560319"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView5"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/select"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Step 01. 이용권 선택"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView2"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="구매 또는 선물할 이용권을 선택합니다. (정기권, 일일권, 단체권, 정기권 선물, 일일권 선물)"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView4" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView6"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/payment"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 02. 결제 수단 선택"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView5"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="휴대전화, 신용카드, 모바일티머니 중 결제수단을 선택합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView6" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView7"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/finish"
+                            android:layout_marginRight="10dp"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 03. 결제진행 및 결제완료"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView7"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="결제창에서 결제가 진행됩니다.\n결제가 완료되면 즉시 서비스 이용이 가능합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView8" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/common_action_bar_splitter" />
+
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 비회원결제 ]"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#560319"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView8"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/select"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:text="Step 01. 일일권 선택"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView10"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="1일 이용권 구매를 선택합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView11" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/imageView9"
+                            android:background="@drawable/image_style"
+                            app:srcCompat="@drawable/finish"
+                            android:layout_marginRight="10dp"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="Step 02. 결제진행 및 결제완료"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView12"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp" />
+
+                            <TextView
+                                android:text="휴대전화, 신용카드 중 결제수단을 선택합니다.\n결제가 완료되면 즉시 서비스 이용이 가능합니다."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:id="@+id/textView13" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/common_action_bar_splitter" />
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.mybikes.ChargeActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/seoul_bike"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="운영시간"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textIsSelectable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 서울자전거 '따릉이' ]"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#560319"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 24시간, 연중무휴"
+                android:textSize="12dp"
+                android:layout_marginBottom="3dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 자전거대여소 ]"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#560319"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 대여소마다 다름(대여소 상세정보에 표기)"
+                android:textSize="12dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이용요금"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 서울자전거 '따릉이' ]"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:textColor="#560319"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary_material_dark" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="구분"
+                        android:id="@+id/textView25"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="6dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="정기권"
+                        android:id="@+id/textView26"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="#000000"
+                        android:paddingLeft="51dp"
+                        android:paddingRight="51dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="일일권"
+                        android:id="@+id/textView27"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="#000000"
+                        android:paddingLeft="51dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="50dp"
+                        android:paddingBottom="10dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="상품"
+                        android:id="@+id/textView28"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="1주일 : 3,000원\n1개월 : 5,000원\n6개월 : 15,000원\n1년 : 30,000원"
+                        android:id="@+id/textView29"
+                        android:layout_column="0"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="* 일반권(1시간)\n: 1,000원\n* 프리미엄권(2\n시간) : 2,000원"
+                        android:id="@+id/textView30"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="추가\n요금"
+                        android:id="@+id/textView31"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="1시간 초과시 30분당\n1,000원씩 추가"
+                        android:id="@+id/textView32"
+                        android:layout_column="0"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="* 일반권\n- 1시간 초과시\n30분당 1,000원씩 추가\n* 프리미엄권\n- 2시간 초과시\n30분당 1,000원씩 추가"
+                        android:id="@+id/textView33"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="이용\n시간"
+                        android:id="@+id/textView34"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="- [일반권] 자전거 기본 대여 시간 : 60(분)\n- [일반권] 최대 대여 시간 : 240(분)\n- [프리미엄권] 자전거 기본 대여 시간 : 120(분)\n- [프리미엄권] 최대 대여 시간 : 360(분)\n- 자전거 대여 후 기본 대여 시간 초과 시 추가 요금 부과\n(추가 요금 미납시 재대여 불가)\n- 최대 대여기산 초과 시 도난 혹은 분실로 간주함"
+                        android:id="@+id/textView35"
+                        android:layout_column="0"
+                        android:layout_span="2"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/common_action_bar_splitter"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 자전거대여소 ]"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:textColor="#560319"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary_material_dark" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="대여소 이름"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="요금"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="영등포구청 대여소\n영등포구 당산대여소\n동대문보건소 입구 대여소\n신목동역자전거 주차장 겸 무료대여소\n목동무료대여소\n흑석대여소\n보라매대여소\n방배자전거무료대여소\n자전거종합서비스센터 대여소\n자전거토탈서비스센터 대여소\n두바퀴쉼터 대여소\n답십리역 1번출구 대여소\n잠실대여소\n거여마천대여소\n문정가락대여소\n풍납대여소\n홍은사거리\n사천교\n문화촌 어린이공원\n해담는다리\증산2교"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="무료"
+                        android:layout_column="1"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="용산구종합행정타운\n교통안전체험장"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="무료3시간\n초과시간당 1,000원"
+                        android:layout_column="1"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="양재역 스테이션\n삼호물산 스테이션\n구룡사삼거리 스테이션\n양재시민의숲역 스테이션\n하이브랜드 스테이션\n 바우뫼 문화복지회관 스테이션\n우면동 네이처힐 스테이션\n우면동 스타힐스 스테이션\n잠원역 스테이션\n신반포아파트 스테이션\n고속터미널역 스테이션\n이수역 스테이션\n뒷벌공원 스테이션\n청계산입구역 스테이션\n언남초등학교 스테이션\n자전거종합서비스센터 대여소"
+                        android:layout_column="0"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="1,000원/1시간"
+                        android:layout_column="1"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="망원대여소\n강서대여소\n잠원대여소"
+                        android:layout_column="0"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="1인용 : 3,000원/시간\n2인용 : 6,000원/시간"
+                        android:layout_column="1"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/common_action_bar_splitter" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="당고개역 대여소\n상계역 대여소\n노원문화예술회관 대여소\n당현천 대여소\n섬밭길 대여소\n월계한내공원 대여소\n녹천교 대여소\n중계 어린이 교통공원 대여소"
+                        android:layout_column="0"
+                        android:textSize="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:text="1,000원/1일\n15,000원/연"
+                        android:layout_column="1"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/common_action_bar_splitter"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

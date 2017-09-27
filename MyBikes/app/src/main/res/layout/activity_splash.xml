@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.mybikes.SplashActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:background="@drawable/seoul_opendata"
+            android:layout_height="25dp"
+            android:layout_width="100dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:background="@drawable/seoul_logo_new"
+            android:layout_marginLeft="10dp"
+            android:layout_height="25dp"
+            android:layout_width="70dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/splash"
+        android:id="@+id/imageView9"
+        android:background="#ffffff" />
+</LinearLayout>
